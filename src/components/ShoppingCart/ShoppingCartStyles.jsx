@@ -2,13 +2,15 @@ import styled from 'styled-components';
 
 export const Container = styled.div``;
 
-export const Titulo = styled.h2``;
+export const Title = styled.h2``;
 
-export const Botonera = styled.div``;
+export const Amounth = styled.h3``;
+
+export const Information = styled.p``;
 
 export const BuyButton = styled.button``;
 
-export const BuyClose = styled.button``;
+export const BuyClose = styled.button``; /*Es necesario?*/
 
 export const BuyList = styled.ul``;
 

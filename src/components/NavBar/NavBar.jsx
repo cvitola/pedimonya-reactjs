@@ -9,10 +9,21 @@ const NavBar = () => {
     const [showMobileMenu, setShowMobileMenu] = useState(false);
     const navigate = useNavigate();
 
-    const handleOnClick = () => {
+    const handleOnClickShop = () => {
         setShowMobileMenu(!showMobileMenu);
         navigate('/shopping');
     }
+
+    const handleOnClickHome = () => {
+        setShowMobileMenu(!showMobileMenu);
+        navigate('/home');
+    }
+
+    const handleOnClickContact = () =>{
+        setShowMobileMenu(!showMobileMenu);
+        navigate('/contact');
+    }
+
 
   return (
         <Container>
@@ -26,15 +37,18 @@ const NavBar = () => {
                     }
                 </MobileIcon>
                 <Menu open={showMobileMenu}>
-                    <MenuItem onClick={() => setShowMobileMenu(!showMobileMenu)}>
-                        <MenuItemLink>ABOUT</MenuItemLink>
+                    <MenuItem onClick={handleOnClickHome}>
+                        <MenuItemLink>HOME</MenuItemLink>
                     </MenuItem>
                     <MenuItem onClick={() => setShowMobileMenu(!showMobileMenu)}>
+                        <MenuItemLink>STORE</MenuItemLink>
+                    </MenuItem>
+                    <MenuItem onClick={handleOnClickContact}>
                         <MenuItemLink>CONTACT</MenuItemLink>
                     </MenuItem>
                     {/*<MenuItem onClick={() => setShowMobileMenu(!showMobileMenu)}>*/}
-                    <MenuItem onClick={handleOnClick}>
-                        <MenuItemLink>SHOP
+                    <MenuItem onClick={handleOnClickShop}>
+                        <MenuItemLink>SHOPPING CART
                         <CantidadItem>0</CantidadItem>
                     </MenuItemLink>
                     </MenuItem>

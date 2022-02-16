@@ -37,8 +37,8 @@ export const Menu = styled.ul`
     justify-content: space-between;
     list-style: none;
 
-    @media screen and (max-width: 960px){
-        /*background-color: #23394D;*/
+    @media screen and (max-width: 768px){
+        background-color: #FAFAFA;
         position: absolute;
         top: 70px;
         left: ${( { open }) => open ? "0" : "-100%"};
@@ -54,7 +54,7 @@ export const Menu = styled.ul`
 export const MenuItem = styled.li`
     height: 100%;
 
-    @media screen and (max-width: 960px){
+    @media screen and (max-width: 768px){
         width: 100%;
         height: 70px;
         display: flex;
@@ -80,7 +80,7 @@ export const MenuItemLink = styled.a`
         transition: 0.5s all ease;
     }
 
-    @media screen and (max-width: 960px){
+    @media screen and (max-width: 768px){
         width: 100%;
     }
     `;
@@ -102,7 +102,7 @@ export const CantidadItem = styled.div`
 export const MobileIcon = styled.div`
     display: none;
     
-    @media screen and (max-width: 960px){
+    @media screen and (max-width: 768px){
         display: flex;
         align-items: center;
         cursor: pointer;
