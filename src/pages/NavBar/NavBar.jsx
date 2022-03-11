@@ -19,6 +19,11 @@ const NavBar = () => {
         navigate('/home');
     }
 
+    const handleOnClickStore = () => {
+        setShowMobileMenu(!showMobileMenu);
+        navigate('/store');
+    }
+
     const handleOnClickContact = () =>{
         setShowMobileMenu(!showMobileMenu);
         navigate('/contact');
@@ -40,7 +45,7 @@ const NavBar = () => {
                     <MenuItem onClick={handleOnClickHome}>
                         <MenuItemLink>HOME</MenuItemLink>
                     </MenuItem>
-                    <MenuItem onClick={() => setShowMobileMenu(!showMobileMenu)}>
+                    <MenuItem onClick={handleOnClickStore}> 
                         <MenuItemLink>STORE</MenuItemLink>
                     </MenuItem>
                     <MenuItem onClick={handleOnClickContact}>

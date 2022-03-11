@@ -1,10 +1,13 @@
 import React from 'react'
-import { Button, Container, Form, Input, TextArea, Title } from './FormContactStyles'
+import { Form, Input, TextArea, ImgContact  } from './FormContactStyles'
+import { ContainerFirst, H1, Button } from '../BasicStyles/BasicStyles';
+import imgContact from '../../assets/img/contactImage.jpg';
 
 const FormContact = () => {
   return (
-    <Container>
-      <Title>Contactanos</Title>
+    <ContainerFirst>
+      <H1>Contactanos</H1>
+      <ImgContact src={imgContact} alt="Imagen Contacto" />
       <Form>
           <Input placeholder='Nombre...'/>
           <Input placeholder='Apellido...'/>
@@ -12,9 +15,8 @@ const FormContact = () => {
           <Input placeholder='Telefono...'/>
           <TextArea />
           <Button>Enviar</Button>
-          <Button>Cancelar</Button>
       </Form>
-    </Container>
+    </ContainerFirst>
   )
 }
 

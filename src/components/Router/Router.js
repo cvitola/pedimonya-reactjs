@@ -1,7 +1,9 @@
 import { Routes, Route } from "react-router-dom"
 import ShoppingCart from "../ShoppingCart/ShoppingCart";
-import MainPage from '../Main/Main'
+//import MainPage from '../Main/Main'
+import Home from "../../pages/Home/Home";
 import FormContact  from "../FormContact/FormContact";
+import StorePokes from "../../pages/StorePokes/StorePokes";
 
 /*
 import Products from "../pages/Products/Products"
@@ -15,9 +17,10 @@ const Router = () => {
             <Routes>
              
                 <Route path='/shopping' element={<ShoppingCart />} />
-                <Route path='/home' element={<MainPage />} />
+                <Route path='/home' element={<Home />} />
                 <Route path='/contact' element={<FormContact />} />
-                <Route path='*' element={<MainPage />} />
+                <Route path='/store' element={<StorePokes /> } />
+                <Route path='*' element={<Home />} />
             </Routes>
 
     )
