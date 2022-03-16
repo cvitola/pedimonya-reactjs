@@ -1,8 +1,8 @@
 
 
 export const colorsTheme = {
-    red1: "#D91E0D",
-    green1 : "#52BF04",
+    red1: "#f44336",
+    green1 : "#4CAF50",
     white1: "#F1F0DE",
     yellow: "rgb(247 222 130)",
     red3: "#E85030",

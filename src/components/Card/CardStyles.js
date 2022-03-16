@@ -5,7 +5,6 @@ export const Content = styled.div`
     background-color: rgba(255,255,255,0.5);
     backdrop-filter: blur(20px);
     width: 330px;
-    height: 430px;
     border-radius: 8px;
     box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
     overflow: hidden;
@@ -37,6 +36,12 @@ export const Content = styled.div`
         padding: 5px;
         font-weight: 600;
         font-size: 24px;
+    }
+
+    & h6{
+        padding: 5px;
+        margin: 5px;
+        color: red;
     }
     
     & p{

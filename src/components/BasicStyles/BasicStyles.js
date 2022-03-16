@@ -18,12 +18,15 @@ export const P = styled.p`
 export const Button = styled.button`
     border: none;
     color: white;
-    padding: 10px;
+    padding: 15px 32px;
     margin: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
     width: 80%;
-    background: ${colorsTheme.green1};
+    background: ${props => props.warning ? colorsTheme.red1 : colorsTheme.green1};
     border-radius: 10px;
-    box-shadow: 1px 1px 1px grey;
     
     &:hover{
         color: ${colorsTheme.green1};
@@ -69,7 +72,8 @@ const girar = keyframes`
     to {
         transform: rotate(360deg);
     }
-`;
+    `;
+
 export const Loading = styled.div`
     width: 70px;
     height: 70px;
@@ -79,5 +83,4 @@ export const Loading = styled.div`
     animation-name: ${girar};
     animation-duration: 2s;
     animation-iteration-count: infinite;
-
-`;
+    `;

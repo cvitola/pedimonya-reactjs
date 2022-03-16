@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react'
 import { Container, ContainerFirst, H1 } from '../../components/BasicStyles/BasicStyles'
 import storeImage from '../../assets/img/storeImage.jpg';
 import { ImgStore } from './StorePokesStyles';
-import { getPokemons, getInfoPokemon } from '../../components/API/PokeAPI';
+import { getPokemons, getInfoPokemon } from '../../API/PokeAPI';
 import  Card  from '../../components/Card/Card';
 
 

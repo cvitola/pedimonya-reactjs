@@ -6,7 +6,7 @@ import imgContact from '../../assets/img/contactImage.jpg';
 const FormContact = () => {
   return (
     <ContainerFirst>
-      <H1>Contactanos</H1>
+      <H1>CONTACTANOS</H1>
       <ImgContact src={imgContact} alt="Imagen Contacto" />
       <Form>
           <Input placeholder='Nombre...'/>
