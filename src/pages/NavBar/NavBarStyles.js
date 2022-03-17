@@ -8,6 +8,18 @@ export const Container = styled.div`
     `;
 
 export const Wrapper = styled.div`
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 3rem;
+    position: fixed;
+    background-color: #fafafa;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index:10;
+
+    /*
     width: 100%;
     max-width: 1300px;
     height: 100%;
@@ -15,7 +27,9 @@ export const Wrapper = styled.div`
     flex-wrap: wrap;
     justify-content: space-around;
     margin: auto;
+    */
     `;
+
 
 export const LogoContainer = styled.div`
     margin-left: 0.5rem;

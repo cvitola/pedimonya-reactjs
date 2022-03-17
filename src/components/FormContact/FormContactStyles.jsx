@@ -36,6 +36,7 @@ export const ImgContact = styled.img`
     width: 30%;
     padding:10px;
     margin:10px;
+    border-radius: 15px;
     @media screen and (max-width: 768px){
         width:100%;
     }

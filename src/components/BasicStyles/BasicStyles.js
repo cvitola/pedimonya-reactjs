@@ -54,6 +54,13 @@ export const Container = styled.ul`
     & li {
         padding: 10px;
     }
+
+    & h3{
+        padding: 20px;
+        margin: 20px;
+        font-size: 28px;
+        color: ${colorsTheme.red3}
+    }
     `;
 
 export const ContainerFirst = styled.div`
@@ -74,13 +81,23 @@ const girar = keyframes`
     }
     `;
 
-export const Loading = styled.div`
+export const Loader = styled.div`
     width: 70px;
     height: 70px;
+    padding: 30px;
+    margin: 30px;
     border: 10px solid #eee;
     border-top: 10px solid #666;
     border-radius: 50%;
     animation-name: ${girar};
     animation-duration: 2s;
     animation-iteration-count: infinite;
+    `;
+
+export const KeyPad = styled.div`
+    display: flex;
+    flex-direction: row;
+    justify-content: center
+    padding: 10px;
+    margin: 10px;
     `;

@@ -18,9 +18,6 @@ export const Menu = styled.ul`
     display:flex;
     justify-content: center;
     list-style: none;
-    @media screen and (max-width: 960px){
-        flex-direction: column;
-    }
     `;
 export const MenuItem = styled.li`    
     display:flex;
@@ -43,6 +40,12 @@ export const MenuItem = styled.li`
         color:#E0792A;
         transition: 0.5s all ease;
     }
+
+    @media screen and (max-width: 960px){
+        padding: 10px;
+        marging: 10px;
+    }
+
 `;
 
 export const TitleFoot = styled.h2`

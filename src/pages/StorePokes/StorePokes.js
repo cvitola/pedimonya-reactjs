@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react'
-import { Container, ContainerFirst, H1 } from '../../components/BasicStyles/BasicStyles'
+import { Container, ContainerFirst, H1, Loader } from '../../components/BasicStyles/BasicStyles'
 import storeImage from '../../assets/img/storeImage.jpg';
 import { ImgStore } from './StorePokesStyles';
 import { getPokemons, getInfoPokemon } from '../../API/PokeAPI';
@@ -25,7 +25,10 @@ const StorePokes = () => {
 
   }
   useEffect( () => {
+    setLoading(true);
     onGetPokemons();
+    setTimeout(() => {
+      setLoading(false)}, 2000);
   },[]);
   
   return (
@@ -34,10 +37,11 @@ const StorePokes = () => {
         <ImgStore src={storeImage} alt="Imagen Store" />
         <Container>
           {
-            arrayPokes.map( (poke,i) => <li key={i}> 
-                <Card dato={poke} /> 
-              </li>
-              
+            loading ? 
+              <Loader /> :
+              arrayPokes.map( (poke,i) => <li key={i}> 
+                  <Card dato={poke} /> 
+                </li>
             )
          }
         </Container>

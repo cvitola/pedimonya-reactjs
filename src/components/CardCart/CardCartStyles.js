@@ -7,8 +7,8 @@ export const Content = styled.div`
     margin: 10px 0 10px 0;
     `;
 export const Container = styled.div`
-    /* width: 330px;
-    height: 430px;*/
+     width: 330px;
+     /*height: 430px;*/
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -19,9 +19,9 @@ export const Container = styled.div`
     padding: 20px;
     text-align: center;
     transition: all 0.25s;
-    background: #CC95C0;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #7AA1D2, #DBD4B4, #CC95C0);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #7AA1D2, #DBD4B4, #CC95C0); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: #CAC531;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top, #F3F9A7, #CAC531);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, #F3F9A7, #CAC531); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
     &:hover{
         transform: translateY(-10px);

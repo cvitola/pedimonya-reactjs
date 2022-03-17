@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import { useSelector, useDispatch } from "react-redux";
-import { ContainerFirst, H1, Container, H2, Button } from '../../components/BasicStyles/BasicStyles';
+import { ContainerFirst, H1, Container, H2, Button, KeyPad } from '../../components/BasicStyles/BasicStyles';
 import  CardCart from '../../components/CardCart/CardCart';
 import { DeleteCartAction } from '../../redux/pokemones';
 
@@ -32,10 +32,17 @@ const ShoppingCart = () => {
       <ContainerFirst>
         <H1>MI PEDIDO</H1>
         <H2>TOTAL: ${amountTotal()}</H2>
-        <Button>COMPRAR</Button>
-        <Button onClick={handleEmptyCart}>VACIAR</Button>
+        <KeyPad>
+          <Button>COMPRAR</Button>
+          <Button onClick={handleEmptyCart}>VACIAR</Button>   
+        </KeyPad>
+
+
+
         <Container>
-        {  paintCards(shoppingPokes) }
+        {  shoppingPokes.length == 0 ? 
+              <h3>Nada por aqui ... </h3> :
+            paintCards(shoppingPokes) }
         </Container>
         
       </ContainerFirst>
