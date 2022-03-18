@@ -81,7 +81,7 @@ export const MenuItemLink = styled.a`
     justify-content: center;
     align-items:center;
     height: 100%;
-    padding: 0.5rem 2.5rem;
+    padding: 2rem;
     /*color: #64B2FF;*/
     font-size: 1rem;
     font-weight: 300;

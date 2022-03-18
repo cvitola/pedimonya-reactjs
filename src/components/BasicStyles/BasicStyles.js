@@ -69,7 +69,7 @@ export const ContainerFirst = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items:center;
-    background-color: ${colorsTheme.yellow}
+    background-color: ${colorsTheme.yellow};
     `;
 
 const girar = keyframes`

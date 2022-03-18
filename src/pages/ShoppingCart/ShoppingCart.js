@@ -11,7 +11,7 @@ const ShoppingCart = () => {
   const { shoppingPokes } = useSelector( store => store.pokes )
   const amountTotal = () => {
 
-    return shoppingPokes.reduce((acum, current) => acum + current.price, 0);
+    return shoppingPokes?.reduce((acum, current) => acum + current.price, 0);
   }
 
   const paintCards = (shoppingPokes) => {
@@ -40,8 +40,8 @@ const ShoppingCart = () => {
 
 
         <Container>
-        {  shoppingPokes.length == 0 ? 
-              <h3>Nada por aqui ... </h3> :
+        {  shoppingPokes?.length === 0 ? 
+              <h3>Tú carrito está vacío... </h3> :
             paintCards(shoppingPokes) }
         </Container>
         

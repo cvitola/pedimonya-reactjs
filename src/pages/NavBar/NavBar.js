@@ -34,7 +34,7 @@ const NavBar = () => {
     }
 
     useEffect( () => {
-        setGeneralItem(shoppingPokes.reduce((acum, current) => acum + current.amount, 0));
+        setGeneralItem(shoppingPokes?.reduce((acum, current) => acum + current.amount, 0));
     },[shoppingPokes])
 
   return (

@@ -9,7 +9,8 @@ import  Count  from './Count/Count';
 /* Falta modificar Diseño */
 
 const Card = ({dato}) => {
-  
+  console.log("EN LA CARD")
+  console.log(dato)
   const dispatch = useDispatch();
   const [quantity, setQuantity] = useState(1);
   const [error, setError] = useState("")
@@ -44,6 +45,7 @@ const Card = ({dato}) => {
       price: parseInt(dato.base_experience)*3/2 * quantity
     }
     /*1. UI despacha la accion*/
+    console.log(itemCart)
     dispatch(AddAction(itemCart));       
     }
      

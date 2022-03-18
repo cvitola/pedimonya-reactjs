@@ -4,20 +4,15 @@ import homePageImg from '../../assets/img/homeImage.jpg';
 import { ImgHome } from './HomeStyles';
 import  CardInfo  from '../../components/CardInfo/CardInfo';
 import { tiposPokes } from '../../assets/Constants/Constants';
-import { GetAllPokemons } from '../../redux/pokemones';
-import { useDispatch } from 'react-redux';
+
 
 
 const Home = () => {
 
     const [arrayTipos, setArrayTipos] = useState([]);
-    const dispatch = useDispatch();
-    const onGetPokemons = () => {
-      dispatch(GetAllPokemons())
-    }
+
     useEffect( () => {
         setArrayTipos(tiposPokes);
-        onGetPokemons();
     }, []);
 
   return (
