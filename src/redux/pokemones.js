@@ -23,7 +23,7 @@ export default function CartReducer(state = defaultValue, {type, payload}) {
 
             return { 
                 shoppingPokes: [...state.shoppingPokes, payload],
-                arrayPokes: [...state.arrayPokes] 
+                arrayPokes: [...state.arrayPokes]
             };
         case ONE_CART:
             return { shoppingPokes: [...state.shoppingPokes[payload].amount++]} /*WTF ?!*/
@@ -34,9 +34,11 @@ export default function CartReducer(state = defaultValue, {type, payload}) {
             return { shoppingPokes: payload ,
                 arrayPokes: [...state.arrayPokes] }
         case SET_INFO:
-            return { arrayPokes : payload, 
+            return { 
+                arrayPokes : payload, 
                 shoppingPokes:[]
              }
+
         default: return state;
     }
 }

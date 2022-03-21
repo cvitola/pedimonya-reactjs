@@ -30,7 +30,7 @@ const StorePokes = () => {
       <ContainerFirst>
         <H1>ATRAPALOS YA</H1>
         <ImgStore src={storeImage} alt="Imagen Store" />
-        <SearchBar dato={arrayPokes}/>
+        <SearchBar />
         <Container>
           {
             loading ? 

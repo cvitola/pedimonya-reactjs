@@ -10,7 +10,6 @@ const CardCart = ( {item} ) => {
     const { shoppingPokes } = useSelector( store => store.pokes )
 
     const handleDeleteItem = () => {
-        debugger
         const newPokes = shoppingPokes.filter( elem => elem.name !== item.name)
         dispatch(DeleteItemAction(newPokes))
 

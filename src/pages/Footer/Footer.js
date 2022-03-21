@@ -21,7 +21,7 @@ const Footer = () => {
             <FaInstagram/>
           </MenuItem>
         </Menu>
-        <TitleFoot>© 2022, hecho con 💗 por VittoSolution.</TitleFoot>
+        <TitleFoot>© 2022, hecho con 💗 por VittoSolution & NUCBA.</TitleFoot>
       </Container>
   </FooterPage>;
 };
