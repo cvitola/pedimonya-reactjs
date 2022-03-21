@@ -39,5 +39,25 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
+    <script type="module">
+      // Import the functions you need from the SDKs you need
+      import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.9/firebase-app.js";
+      // TODO: Add SDKs for Firebase products that you want to use
+      // https://firebase.google.com/docs/web/setup#available-libraries
+    
+      // Your web app's Firebase configuration
+      const firebaseConfig = {
+        apiKey: "AIzaSyBbp8HtbHG2nAOtCFDXOkVsGXbdhVqKtuk",
+        authDomain: "api-clima-b54c2.firebaseapp.com",
+        projectId: "api-clima-b54c2",
+        storageBucket: "api-clima-b54c2.appspot.com",
+        messagingSenderId: "475398813238",
+        appId: "1:475398813238:web:82bdccf249da97dc4c4a97"
+      };
+    
+      // Initialize Firebase
+      const app = initializeApp(firebaseConfig);
+    </script>
   </body>
+
 </html>
